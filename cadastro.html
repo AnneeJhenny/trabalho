@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se - Cantinho da Leitura</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="cadastro">
+    <div class="container-cadastro">
+        <main class="container-principal container-cadastro-main">
+            <nav class="nav-cadastro-interno">
+                <ul>
+                    <li><a href="index.html" class="botao-nav">Home</a></li>
+                    <li><a href="cadastro.html" class="botao-nav">Cadastro</a></li>
+                </ul>
+            </nav>
+            <h1>Faça seu Cadastro e Descubra um Mundo de Livros!</h1>
+            <form class="formulario-cadastro">
+                <div class="campo-formulario">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+                </div>
+                <div class="campo-formulario">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Seu melhor email">
+                </div>
+                <div class="campo-formulario">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Crie uma senha segura">
+                </div>
+                <button type="submit" class="botao-cadastro">Cadastrar</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Magic Bookstore - Anne&Jhenny.</p>
+        </footer>
+    </div>
+
+    <script>
+        const botoesNav = document.querySelectorAll('.nav-cadastro-interno .botao-nav');
+
+        botoesNav.forEach(botao => {
+            botao.addEventListener('mouseover', function() {
+                this.style.backgroundColor = '#FF69B4';
+                this.style.color = '#fff';
+            });
+
+            botao.addEventListener('mouseout', function() {
+                this.style.backgroundColor = '';
+                this.style.color = '';
+            });
+        });
+    </script>
+</body>
+</html>
